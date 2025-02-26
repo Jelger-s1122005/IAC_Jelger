@@ -1,0 +1,14 @@
+galaxy_info:
+  author: Jelger-s1122005
+  description: Installeert Apache
+  company: ""
+  license: MIT
+  min_ansible_version: 2.9
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+  galaxy_tags:
+    - apache
+    - php
+dependencies: []

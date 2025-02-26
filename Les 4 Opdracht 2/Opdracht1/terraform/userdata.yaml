@@ -1,0 +1,11 @@
+#cloud-config
+ssh_authorized_keys:
+  - ${ssh_key}
+packages:
+  - python3
+  - python3-pip
+runcmd:
+  - sudo apt update -y
+  - sudo apt upgrade -y
+  - sudo systemctl enable ssh
+  - sudo systemctl start ssh

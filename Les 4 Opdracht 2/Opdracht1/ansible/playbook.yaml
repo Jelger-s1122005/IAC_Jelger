@@ -1,0 +1,13 @@
+---
+- name: Configure Webserver with Apache and PHP
+  hosts: webservers
+  become: true
+  roles:
+    - apache
+    - php
+
+- name: Configure Database Server with MySQL
+  hosts: dbservers
+  become: true
+  roles:
+    - mysql
