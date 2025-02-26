@@ -1,13 +1,8 @@
----
-- name: Configure Webserver with Apache and PHP
-  hosts: webservers
-  become: true
+- hosts: webservers
   roles:
-    - apache
-    - php
+    - Jelger-s1122005.apache
+    - Jelger-s1122005.php
 
-- name: Configure Database Server with MySQL
-  hosts: dbservers
-  become: true
+- hosts: dbservers
   roles:
-    - mysql
+    - Jelger-s1122005.mysql
